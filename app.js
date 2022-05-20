@@ -6,7 +6,7 @@ const router = require("./routes/bookRoutes")
 const app = express();
 
 // Middlewares
-
+app.use(express.json()) // will convert middleware and allow reading of json everywhere through server
 app.use("/books", router) //localhost:5000/books
 
 mongoose.connect(
