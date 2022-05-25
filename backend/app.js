@@ -2,11 +2,12 @@
 const express = require("express");
 const mongoose = require("mongoose")
 const router = require("./routes/bookRoutes")
-
+const cors = require('cors')
 const app = express();
 
 // Middlewares
 app.use(express.json()) // will convert middleware and allow reading of json everywhere through server
+app.use(cors()); // helps in overriding securities
 app.use("/books", router) //localhost:5000/books
 
 mongoose.connect(
