@@ -1,4 +1,5 @@
 import React from 'react'
+import { Button } from '@mui/material';
 
 const Book = (props) => {
     const { id, name, author, description, price, image } = props.book;
@@ -9,8 +10,8 @@ const Book = (props) => {
         <h3>{name}</h3>
         <p>{description}</p>
         <h2>${price}</h2>
-        {/* <Button>Update</Button>
-        <Button>Delete</Button> */}
+        <Button>Update</Button>
+        <Button>Delete</Button>
     </div>
   )
 }
