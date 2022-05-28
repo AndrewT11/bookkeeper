@@ -7,12 +7,16 @@ const Book = (props) => {
   return (
     <div className="bookCard">
       <img src={image} alt={name} />
-      <article>By {author}</article>
-      <h3>{name}</h3>
-      <p>{description}</p>
-      <h2>${price}</h2>
-      <Button>Update</Button>
-      <Button>Delete</Button>
+      <section>
+        <article>By {author}</article>
+        <h3>{name}</h3>
+        <p>{description}</p>
+        <h2>${price}</h2>
+      </section>
+      <aside>
+        <Button color="success">Update</Button>
+        <Button color="error">Delete</Button>
+      </aside>
     </div>
   );
 };
