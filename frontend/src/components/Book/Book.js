@@ -3,7 +3,8 @@ import { Button } from "@mui/material";
 import "./Book.css";
 
 const Book = (props) => {
-  const { id, name, author, description, price, image } = props.book;
+  // id marked as _id for MongoDB. MongoDB will auto assign ID
+  const { _id, name, author, description, price, image } = props.book;
   return (
     <div className="bookCard">
       <img src={image} alt={name} />

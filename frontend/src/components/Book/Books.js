@@ -18,6 +18,7 @@ const Books = () => {
   return (
     <div>
       <ul>
+        {/* if you don't include books && books.map, books will not render */}
         {books &&
           books.map((book, i) => (
             <li key={i}>
