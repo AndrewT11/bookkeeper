@@ -1,8 +1,8 @@
 body {
     height: 100%;
     width: 100%;
-    background-image: url("https://st4.depositphotos.com/11379338/20360/v/950/depositphotos_203606650-stock-illustration-palm-monstera-seamless-pattern.jpg?forcejpeg=true");
-    background-color: darkgoldenrod;
+    /* background-image: url("https://cdn.wallpapersafari.com/89/63/54rD6n.jpg"); */
+    /* background-color: rgb(61, 61, 61); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,8 +21,8 @@ ul {
 
 li {
     border-radius: 5px;
-    background-image: url("https://cms-assets.tutsplus.com/cdn-cgi/image/width=840/uploads/users/33/posts/13039/final_image/leather-texture-photoshop-tutorial.jpg");
-    background-color: black;
+    /* background-image: url("https://cms-assets.tutsplus.com/cdn-cgi/image/width=840/uploads/users/33/posts/13039/final_image/leather-texture-photoshop-tutorial.jpg"); */
+    background-color: rgb(61, 61, 61);
     margin: 3rem;
     padding: 10px;
     width: 250px;
@@ -34,24 +34,61 @@ li {
 
 
 .bookCard {
-    color: rgb(181, 147, 14);
-    font-weight: bold;
+    color: rgb(198, 198, 198);
+    /* font-weight: bold; */
     /* border: 3px dotted hotpink; */
     margin: 0px;
     display: flex;
     flex-direction: column;
     /* align-items: center; */
     /* align-content: center; */
+    /* justify-content: center; */
     /* height: 50%; */
     width: 100%;
     height: 100%;
     align-items: center;
 }
 
-.bookCard > img {
-    width: 70%;
+.bookCard img {
+    height: 15rem;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
     /* align-content: center; */
+}
+
+.title {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* font-weight: bold; */
+    font-size: 1.5rem;
+}
+
+.bookCard h3 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 7px;
+}
+
+.bookCard p {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding:3px; 
+}
+
+
+
+article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookCard h2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding:3px; 
 }

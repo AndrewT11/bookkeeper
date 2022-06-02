@@ -10,13 +10,17 @@ const Book = (props) => {
       <img src={image} alt={name} />
       <section>
         <article>By {author}</article>
-        <h3>{name}</h3>
+        <h3 className="title">{name}</h3>
         <p>{description}</p>
         <h2>${price}</h2>
       </section>
       <aside>
-        <Button color="success">Update</Button>
-        <Button color="error">Delete</Button>
+        <Button sx={{ mt: "auto" }} color="success">
+          Update
+        </Button>
+        <Button sx={{ mt: "auto" }} color="error">
+          Delete
+        </Button>
       </aside>
     </div>
   );
