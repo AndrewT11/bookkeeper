@@ -57,7 +57,9 @@ li {
     /* justify-content: center; */
     /* align-items: center; */
     /* align-content: center; */
-    box-shadow: 3px 3px 10px rgb(241, 238, 238);
+    /* box-shadow: 3px 3px 10px rgb(241, 238, 238); */
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 .title {

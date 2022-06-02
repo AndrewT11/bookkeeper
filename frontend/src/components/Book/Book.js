@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "@mui/material";
+import { Link } from "react-router-dom";
 import "./Book.css";
 
 const Book = (props) => {
@@ -15,7 +16,12 @@ const Book = (props) => {
         <h2>${price}</h2>
       </section>
       <aside>
-        <Button sx={{ mt: "auto" }} color="success">
+        <Button
+          LinkComponent={Link}
+          to={`/books/${_id}`}
+          sx={{ mt: "auto" }}
+          color="success"
+        >
           Update
         </Button>
         <Button sx={{ mt: "auto" }} color="error">
