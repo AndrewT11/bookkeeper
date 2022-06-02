@@ -30,6 +30,8 @@ li {
     max-width: 250px;
     max-height: 60%;
     box-shadow: 5px 5px 10px rgb(64, 63, 63);
+    border: 2px solid black;
+    
 }
 
 
@@ -55,6 +57,7 @@ li {
     /* justify-content: center; */
     /* align-items: center; */
     /* align-content: center; */
+    box-shadow: 3px 3px 10px rgb(241, 238, 238);
 }
 
 .title {
@@ -84,6 +87,7 @@ article {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
 }
 
 .bookCard h2 {
