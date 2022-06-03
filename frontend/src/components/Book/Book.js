@@ -13,6 +13,8 @@ const Book = (props) => {
     await axios
       .delete(`http://localhost:5000/books/${_id}`)
       .then((res) => res.data)
+
+      // got to figure out how to reload page. Confirm delete page?
       .then(() => history("/"))
       .then(() => history("/books"));
   };
@@ -37,9 +39,11 @@ const Book = (props) => {
           Update
         </Button>
         <Button
+          LinkComponent={Link}
+          to={`/delete/${_id}`}
+          sx={{ mt: "auto", margin: "5px" }}
           variant="contained"
-          onClick={deleteHandler}
-          sx={{ mt: "auto" }}
+          // onClick={deleteHandler}
           color="error"
         >
           Delete
