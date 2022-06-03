@@ -28,11 +28,12 @@ const DeleteBook = () => {
 
   const deleteRequest = async () => {
     await axios
-      .delete(`http://localhost:5000/books/delete/${id}`)
-      .then((res) => res.data);
+      .delete(`http://localhost:5000/books/${id}`)
+      .then((res) => console.log(res.data));
   };
 
   const handleSubmit = (e) => {
+    console.log("inside handle submit");
     e.preventDefault();
     deleteRequest().then(() => history("/books"));
   };
@@ -53,7 +54,11 @@ const DeleteBook = () => {
           <h2>Are you sure you want to delete this book?</h2>
           {/* Added onSubmit here to hopefully have button handle deleteRequest() */}
           <form onSubmit={handleSubmit}>
-            <Button variant="contained" type="submit">
+            <Button
+              // onSubmit={handleSubmit}
+              variant="contained"
+              type="submit"
+            >
               Delete Book
             </Button>
           </form>
