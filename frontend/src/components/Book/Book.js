@@ -5,7 +5,7 @@ import "./Book.css";
 import axios from "axios";
 
 const Book = (props) => {
-  const history = useNavigate;
+  const history = useNavigate();
   // id marked as _id for MongoDB. MongoDB will auto assign ID
   const { _id, name, author, description, price, image } = props.book;
 
@@ -13,6 +13,7 @@ const Book = (props) => {
     await axios
       .delete(`http://localhost:5000/books/${_id}`)
       .then((res) => res.data)
+      .then(() => history("/"))
       .then(() => history("/books"));
   };
 
@@ -29,12 +30,18 @@ const Book = (props) => {
         <Button
           LinkComponent={Link}
           to={`/books/${_id}`}
-          sx={{ mt: "auto" }}
+          sx={{ mt: "auto", margin: "5px" }}
+          variant="contained"
           color="success"
         >
           Update
         </Button>
-        <Button onClick={deleteHandler} sx={{ mt: "auto" }} color="error">
+        <Button
+          variant="contained"
+          onClick={deleteHandler}
+          sx={{ mt: "auto" }}
+          color="error"
+        >
           Delete
         </Button>
       </aside>
