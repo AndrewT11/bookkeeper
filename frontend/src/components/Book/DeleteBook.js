@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./Book.css";
+import burningBook from "../images/bookburning-fococlipping-standard.png";
 
 const DeleteBook = () => {
   // this will set the current state of books to the one you chose to delete.
@@ -45,6 +46,7 @@ const DeleteBook = () => {
       {inputs && (
         <>
           <section className="deleteContainer">
+            <img className="deleteImg" src={burningBook} alt="Burning Book" />
             <div className="bookCardDelete">
               <img src={inputs.image} alt={inputs.name} />
               <section className="deleteSection">

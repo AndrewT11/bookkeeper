@@ -16,7 +16,7 @@ mongoose
   .connect(
     "mongodb+srv://admin:FffvnsNC9mLN21Lj@cluster0.yntfo.mongodb.net/?retryWrites=true&w=majority"
   )
-  .then(() => console.log("Connected to Database"))
+  .then(() => console.log("Conneezeed to the Deezy"))
   .then(() => {
     app.listen(5000);
   })

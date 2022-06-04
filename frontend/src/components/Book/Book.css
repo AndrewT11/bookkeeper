@@ -237,6 +237,8 @@ article {
 
 .deleteContainer {
     /* background-color: black; */
+    /* background-image: url("../images/bookburning.jpeg"); */
+    /* background-color: black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -269,6 +271,12 @@ article {
 .deleteSection {
   
     color:rgb(198, 198, 198);
+}
+
+.deleteImg {
+    margin: 10px 0px;
+    padding: 0;
+    width: 300px;
 }
 
 
