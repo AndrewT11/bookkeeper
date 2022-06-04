@@ -54,7 +54,7 @@ const UpdateBook = () => {
   };
 
   return (
-    <div>
+    <div className="updatePageBackground">
       {inputs && (
         <form onSubmit={handleSubmit}>
           <Box
@@ -128,7 +128,7 @@ const UpdateBook = () => {
               }
               label="Available"
             />
-            <Button variant="contained" type="submit">
+            <Button variant="contained" type="submit" color="success">
               Update Book
             </Button>
           </Box>
