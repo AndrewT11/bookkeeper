@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import Book from "./Book";
 import "./Book.css";
+import openbook from "../images/openbook-fococlipping-standard.png";
 
 const URL = "http://localhost:5000/books";
 
@@ -16,7 +17,8 @@ const Books = () => {
     fetchHandler().then((data) => setBooks(data.books));
   }, []);
   return (
-    <div>
+    <div className="booksContainer">
+      <img className="booksImg" src={openbook} alt="book" />
       <ul>
         {/* if you don't include books && books.map, books will not render */}
         {books &&

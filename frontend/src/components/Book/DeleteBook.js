@@ -22,7 +22,8 @@ const DeleteBook = () => {
       await axios
         .get(`http://localhost:5000/books/${id}`)
         .then((res) => res.data)
-        .then((data) => setInputs(data.book));
+        .then((data) => setInputs(data.book))
+        .then((data) => console.log(data.book));
     };
     fetchHandler();
   }, [id]);
