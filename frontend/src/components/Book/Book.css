@@ -112,17 +112,12 @@ article {
 
 /* ------------------------------------------------------------------- */
 /* ABOUT SECTION */
-.aboutText {
-    color:rgb(12, 75, 27);
-    text-align: center;
-    margin: 5rem;
-}
-
 .aboutSection {
     display: flex;
     flex-direction: column;
-    margin: 10rem;
+    margin: 5rem;
     align-items: center;
+    width: auto;
 }
 
 .aboutImage {
@@ -131,12 +126,19 @@ article {
     background-size: contain;
 }
 
+
+.aboutText {
+    color:rgb(12, 75, 27);
+    text-align: center;
+    margin: 5rem;
+}
+
 /* ---------------------------------------------------------------------- */
 
 
-/* UPDATE SECTION */
+/* ADD BOOK SECTION */
 
-.updatePage{
+.addBookPage{
     background-image: url("");
     /* background-color: rgb(147, 147, 243); */
     background-position: center;
@@ -145,15 +147,45 @@ article {
     display: flex;
 }
 
-.updateImg {
-    width: 20%;
-    height: 30%;
+.addBookImg {
+    width: 400px;
+    height: 500px;
 }
 
-.updateForm {
-    width: 50%;
-    height: 50%;
+.addBookForm {
+    margin: 10px;
+    width:60%;
     /* color: white; */
+}
+
+@media only screen and (max-width: 1000px) {
+    .addBookImg {
+        width: 200px;
+        height: 250px;
+    }
+    
+    .addBookForm {
+        width:60%;
+        /* color: white; */
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .addBookPage{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .addBookImg {
+        width: 150px;
+        height: 190px;
+    }
+    
+    .addBookForm {
+       
+        width:60%;
+        /* color: white; */
+    }
 }
 
 /* -------------------------------------------------------------------== */
