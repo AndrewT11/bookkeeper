@@ -9,6 +9,7 @@ import {
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import Elsa from "../images/elsaflipped-fococlipping-standard.png";
 
 const UpdateBook = () => {
   const [inputs, setInputs] = useState({});
@@ -54,9 +55,10 @@ const UpdateBook = () => {
   };
 
   return (
-    <div className="updatePageBackground">
+    <div className="updateBookPage">
+      <img className="updateBookImg" src={Elsa} alt="Elsa with glasses" />
       {inputs && (
-        <form onSubmit={handleSubmit}>
+        <form className="updateBookForm" onSubmit={handleSubmit}>
           <Box
             // applies to formcontrollabel only.
             // sx={{

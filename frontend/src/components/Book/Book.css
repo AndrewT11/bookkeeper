@@ -109,6 +109,49 @@ article {
     margin: 0;
     padding:3px; 
 }
+/* ------------------------------------------------------------------- */
+/* UPDATE SECTION */
+.updateBookPage{
+    /* background-image: url(""); */
+    /* background-color: rgb(147, 147, 243); */
+    /* background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    display: flex;
+}
+
+.updateBookImg {
+    width: 400px;
+    height: 500px;
+    margin: 0;
+}
+
+.updateBookForm {
+    margin: 5px;
+    width:60%;
+    /* color: white; */
+}
+
+@media only screen and (max-width: 640px) {
+    .updateBookPage{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .updateBookImg {
+        width: 200px;
+        height: 250px;
+        padding: 0;
+    }
+    
+    .updateBookForm {
+       padding: 20px;
+       margin: 0;
+        width:60%;
+        /* color: white; */
+    }
+}
+
 
 /* ------------------------------------------------------------------- */
 /* ABOUT SECTION */
@@ -139,11 +182,11 @@ article {
 /* ADD BOOK SECTION */
 
 .addBookPage{
-    background-image: url("");
+    /* background-image: url(""); */
     /* background-color: rgb(147, 147, 243); */
-    background-position: center;
+    /* background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     display: flex;
 }
 
