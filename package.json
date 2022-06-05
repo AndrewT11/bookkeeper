@@ -1,0 +1,28 @@
+{
+  "name": "bookkeeper",
+  "version": "1.0.0",
+  "description": "Basic MERN book keeping application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd frontend && npm run build",
+        "install-client": "cd frontend && npm install",
+        "heroku-postbuild": "npm run install-frontend && npm run build",
+        "server": "cd backend && nodemon server.js",
+        "develop": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix frontend\"",
+        "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run start --prefix frontend\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndrewT11/bookkeeper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndrewT11/bookkeeper/issues"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0"
+  },
+  "homepage": "https://github.com/AndrewT11/bookkeeper#readme"
+}
