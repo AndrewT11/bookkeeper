@@ -1,4 +1,3 @@
-// bookkeeping MongoDB admin password: FffvnsNC9mLN21Lj
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -6,6 +5,8 @@ const cors = require("cors");
 const router = require("./routes/bookRoutes");
 
 const app = express();
+
+const PORT = process.env.PORT || 5000;
 
 // Middlewares
 app.use(express.json()); // will convert middleware and allow reading of json everywhere through server
