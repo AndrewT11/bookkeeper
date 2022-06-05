@@ -1,6 +1,6 @@
 import React from "react";
 import "./Book/Book.css";
-import gauntlet from "./images/PngItem_1118875.png";
+import developer from "./images/Developer.jpg";
 const About = () => {
   return (
     // <div style={{ color: "white", textAlign: "center", margin: "5rem" }}>
@@ -11,8 +11,8 @@ const About = () => {
         alt="spiderpman"
       /> */}
       <img
-        className="aboutImage"
-        src={gauntlet}
+        className="aboutImg"
+        src={developer}
         alt="Infinity Gauntlet Pixelated"
         height="200"
       />
@@ -20,13 +20,14 @@ const About = () => {
       {/* </div> */}
       <div className="aboutText">
         <h2>
-          Welcome to The Booker Keeper's Guild! <br />
+          Hello! My name is Andrew Tran. I'm a full-stack web developer learning
+          React and its frameworks. <br />
           <br />
-          You have officially been assigned to keep books. This is a mighty
-          assignment that will take time and dedication <br />
+          This page was a CRUD application used to practice using MongoDB Atlas
+          to serve book information created by the user on the website. Material
+          UI was used for much of the UI used. I hope to add React animations in
+          the future to liven up the webpage. <br />
           <br />
-          Use this time to work hard and work well. Demonstrate your use of the
-          MERN stack. Demonstrate your use of React Hooks. Forge on towards
         </h2>
       </div>
     </section>
