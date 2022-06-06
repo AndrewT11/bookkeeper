@@ -5,7 +5,7 @@ import { Box, Button, FormLabel, TextField } from "@mui/material";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import { useNavigate } from "react-router-dom";
-import spike from "./images/spikethumbsup.png";
+import spike from "../images/spikethumbsup.png";
 
 const AddBook = () => {
   const history = useNavigate();

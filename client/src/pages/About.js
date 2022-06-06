@@ -1,6 +1,6 @@
 import React from "react";
-import "./Book/Book.css";
-import developer from "./images/Developer.jpg";
+import "../components/Book/Book.css";
+import developer from "../images/Developer.jpg";
 const About = () => {
   return (
     // <div style={{ color: "white", textAlign: "center", margin: "5rem" }}>

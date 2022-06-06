@@ -1,8 +1,7 @@
 import { Button } from "@mui/material";
 import React from "react";
 import { Link } from "react-router-dom";
-// import "./Home.css";
-import gauntlet from "./images/PngItem_1118875.png";
+import gauntlet from "../images/PngItem_1118875.png";
 
 const Home = () => {
   return (

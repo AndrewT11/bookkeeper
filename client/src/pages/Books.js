@@ -1,8 +1,8 @@
 //This file will render all books from Book.js here.
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import Book from "./Book";
-import "./Book.css";
+import Book from "../components/Book/Book";
+import "../components/Book/Book.css";
 import openbook from "../images/openbook-fococlipping-standard.png";
 
 const URL = "http://localhost:5000/books";

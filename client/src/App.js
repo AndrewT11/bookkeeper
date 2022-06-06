@@ -1,14 +1,14 @@
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 
-import Home from "./components/Home";
+import Home from "./pages/Home";
 import Header from "./components/Header";
-import AddBook from "./components/AddBook";
-import About from "./components/About";
+import AddBook from "./pages/AddBook";
+import About from "./pages/About";
 
-import Books from "./components/Book/Books";
-import UpdateBook from "./components/Book/UpdateBook";
-import DeleteBook from "./components/Book/DeleteBook";
+import Books from "./pages/Books";
+import UpdateBook from "./pages/UpdateBook";
+import DeleteBook from "./pages/DeleteBook";
 
 function App() {
   return (

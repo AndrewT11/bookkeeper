@@ -4,7 +4,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import "./Book.css";
+import "../components/Book/Book.css";
 import burningBook from "../images/bookburning-fococlipping-standard.png";
 
 const DeleteBook = () => {
