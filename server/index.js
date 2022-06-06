@@ -1,9 +1,8 @@
-// bookkeeping MongoDB admin password: FffvnsNC9mLN21Lj
 const express = require("express");
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 const cors = require("cors");
 const path = require("path");
-
+const db = require("./config/connection");
 const router = require("./routes/bookRoutes");
 
 const PORT = process.env.PORT || 5000;
@@ -27,12 +26,16 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
-mongoose
-  .connect(
-    "mongodb+srv://admin:FffvnsNC9mLN21Lj@cluster0.yntfo.mongodb.net/?retryWrites=true&w=majority"
-  )
-  .then(() => console.log("Conneezeed to the Deezy"))
-  .then(() => {
-    app.listen(PORT);
-  })
-  .catch((err) => err);
+db.once("open", () => {
+  app.listen(PORT, () => {
+    console.log(`API server running on port ${PORT}!`);
+  });
+});
+
+// mongoose
+//   .connect(MONGO_URI)
+//   .then(() => console.log("Conneezeed to the Deezy"))
+//   .then(() => {
+//     app.listen(PORT);
+//   })
+//   .catch((err) => err);
