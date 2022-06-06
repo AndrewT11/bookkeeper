@@ -21,7 +21,7 @@ const DeleteBook = () => {
   useEffect(() => {
     const fetchHandler = async () => {
       await axios
-        .get(`http://localhost:3000/books/${id}`)
+        .get(`http://localhost:5000/books/${id}`)
         .then((res) => res.data)
         .then((data) => setInputs(data.book))
         .then((data) => console.log(data.book));
@@ -31,7 +31,7 @@ const DeleteBook = () => {
 
   const deleteRequest = async () => {
     await axios
-      .delete(`http://localhost:3000/books/${id}`)
+      .delete(`http://localhost:5000/books/${id}`)
       .then((res) => console.log(res.data));
   };
 
