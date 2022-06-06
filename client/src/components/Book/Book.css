@@ -183,7 +183,6 @@ article {
 /* ABOUT SECTION */
 
 .aboutSection {
-    background-color: white;
     height: 100%;
     width: 100%;
     display: flex;
@@ -197,8 +196,12 @@ article {
 .aboutText {
     margin: 5rem 0;
     padding: 1rem;
-    width: 60%;
+    width: 30%;
 }
+
+/* .aboutContactBar {
+
+} */
 
 @media only screen and (max-width: 800px) {
     .aboutSection {
