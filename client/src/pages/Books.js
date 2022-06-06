@@ -5,7 +5,7 @@ import Book from "../components/Book/Book";
 import "../components/Book/Book.css";
 import openbook from "../images/openbook-fococlipping-standard.png";
 
-const URL = "http://localhost:5000/books";
+const URL = "http://localhost:3000/books";
 
 const fetchHandler = async () => {
   return await axios.get(URL).then((res) => res.data);

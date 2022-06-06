@@ -34,7 +34,7 @@ const AddBook = () => {
   // send data to server. posting to the url with the object information.
   const sendRequest = async () => {
     await axios
-      .post("http://localhost:5000/books", {
+      .post("http://localhost:3000/books", {
         name: String(inputs.name),
         author: String(inputs.author),
         description: String(inputs.description),

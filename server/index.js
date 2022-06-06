@@ -6,7 +6,7 @@ const path = require("path");
 const db = require("./config/connection");
 const router = require("./routes/bookRoutes");
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
@@ -14,7 +14,7 @@ const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json()); // will convert middleware and allow reading of json everywhere through server
 app.use(cors()); // helps in overriding securities
-app.use("/books", router); //localhost:5000/books
+app.use("/books", router); //localhost:3000/books
 
 if (
   process.env.NODE_ENV === "production" ||

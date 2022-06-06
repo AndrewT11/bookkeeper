@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const bookController = require("../controllers/bookController");
 
-// localhost:5000/books/
+// localhost:3000/books/
 router.get("/", bookController.getAllBooks);
 router.post("/", bookController.addBook);
 router.get("/:id", bookController.getById);

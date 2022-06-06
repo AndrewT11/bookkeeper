@@ -11,7 +11,7 @@ const Book = (props) => {
 
   const deleteHandler = async () => {
     await axios
-      .delete(`http://localhost:5000/books/${_id}`)
+      .delete(`http://localhost:3000/books/${_id}`)
       .then((res) => res.data)
 
       // got to figure out how to reload page. Confirm delete page?
