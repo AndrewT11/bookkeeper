@@ -6,21 +6,27 @@ import gauntlet from "../images/PngItem_1118875.png";
 const Home = () => {
   return (
     <div>
-      {/* <div style={{ color: "white", textAlign: "center", margin: "5rem" }}> */}
       <section className="homeSection">
-        {/* <div className="homeImage"> */}
-        {/* <img
-        src="https://www.pngmart.com/files/22/Thanos-PNG-Transparent.png"
-        alt="spiderpman"
-      /> */}
-        <img
-          className="homeImage"
-          src={gauntlet}
-          alt="Infinity Gauntlet Pixelated"
-          height="200"
-        />
-
-        {/* </div> */}
+        <div className="homeImagesContainer">
+          <img
+            className="homeImage"
+            src={gauntlet}
+            alt="Infinity Gauntlet Pixelated"
+            height="200"
+          />
+          <img
+            className="homeImage"
+            src={gauntlet}
+            alt="Infinity Gauntlet Pixelated"
+            height="200"
+          />
+          <img
+            className="homeImage"
+            src={gauntlet}
+            alt="Infinity Gauntlet Pixelated"
+            height="200"
+          />
+        </div>
         <div className="homeText">
           <h2>
             Welcome to The Booker Keeper's Guild! <br />
