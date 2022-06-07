@@ -5,6 +5,7 @@ import Book from "../components/Book/Book";
 import "../components/Book/Book.css";
 import openbook from "../images/openbook-fococlipping-standard.png";
 
+// removed books after 5000/ test
 const URL = "http://localhost:5000/books";
 
 const fetchHandler = async () => {
